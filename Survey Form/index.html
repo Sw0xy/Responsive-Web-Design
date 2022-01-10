@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friendship Survey </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="header">
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Lorem ipsum dolorsit amet consectetur adipisicing elit.</p>
+        </div>
+        <form id="survey-form">
+            <ul>
+                <li>
+                    <label for="name" id="form-label">Full name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Mike Tyson" required>
+
+                </li>
+
+                <li>
+                    <label for="email" id="form-label">E-mail</label>
+                    <input type="text" class="form-control" id="email" placeholder="example@gmail.com" required>
+                </li>
+                <li>
+                    <label for="number" id="form-label">Age (Optional)</label>
+                    <input type="text" class="form-control" id="number" pattern="[0-9]{2}" placeholder="55">
+                </li>
+                <li>
+                    <label for="phone" id="form-label">Enter a phone number</label>
+                    <input type="text" class="form-control" id="phone" name="phone" placeholder="123-455-678"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" value="" required>
+                </li>
+
+                <li>
+                    <p class="recommend-label">Would you recommend freeCodeCamp to a friend?</p>
+                    <div class="recommend-section">
+                       
+                  
+                       
+                        <input type="radio" id="definitely" name="gender" value="Male" required />
+                        <label for="definitely">Definitely</label><br>
+                    
+                 
+                        
+                        <input type="radio" id="maybe" name="gender" value="Female" required />
+                        <label for="maybe">Maybe</label>
+                    <br>
+                   
+                       
+                        <input type="radio" id="not" name="gender" value="Other" required />
+                        <label for="not">Not sure</label>
+                    </div>
+                    
+                  
+
+                </li>
+                <li>
+                    <label class="favorite-label" for="favorite">What is your favorite feature of freeCodeCamp?</label>
+                    <select id="favorite" name="favorite" class="form-control" required="">
+                        <option disabled selected>Select an option</option>
+                        <option value="challenges">Challenges</option>
+                        <option value="project">Project</option>
+                        <option value="community">Community</option>
+                        <option value="openSource">Open Source</option>
+                    </select>
+                </li>
+                <li>
+                    <div class="form-group">
+                        <p>
+                            What would you like to see improved?
+                            <span class="clue">(Check all that apply)</span>
+                        </p>
+
+                        <label><input name="prefer" value="front-end-projects" type="checkbox"
+                                class="input-checkbox" />Front-end Projects</label>
+                        <label>
+                            <input name="prefer" value="back-end-projects" type="checkbox"
+                                class="input-checkbox" />Back-end Projects</label>
+                        <label>
+                            <input name="prefer" value="data-visualization" type="checkbox"
+                                class="input-checkbox" />Data Visualization</label>
+                        <label>
+                            <input name="prefer" value="challenges" type="checkbox"
+                                class="input-checkbox" />Challenges</label>
+                        <label>
+                            <input name="prefer" value="open-source-community" type="checkbox"
+                                class="input-checkbox" />Open Source Community</label>
+                        <label>
+                            <input name="prefer" value="gitter-help-rooms" type="checkbox"
+                                class="input-checkbox" />Gitter help rooms</label>
+                        <label>
+                            <input name="prefer" value="videos" type="checkbox" class="input-checkbox" />Videos</label>
+                        <label>
+                            <input name="prefer" value="city-meetups" type="checkbox" class="input-checkbox" />City
+                            Meetups</label>
+                        <label><input name="prefer" value="wiki" type="checkbox" class="input-checkbox" />Wiki</label>
+                        <label><input name="prefer" value="forum" type="checkbox" class="input-checkbox" />Forum</label>
+                        <label><input name="prefer" value="additional-courses" type="checkbox"
+                                class="input-checkbox" />Additional Courses</label>
+                    </div>
+                </li>
+                <li>
+                    
+                        <p>Any comments or suggestions?</p>
+                        <textarea
+                          id="comments"
+                          class="input-textarea"
+                          name="comment"
+                          placeholder="Enter your comment here..."
+                        ></textarea>
+                      
+                </li>
+                <li>
+                    <button class="submit-button" type="submit">
+                        Submit
+                    </button>
+                </li>
+            </ul>
+            <div class="button-wrapper">
+
+            </div>
+
+
+
+
+
+        </form>
+    </main>
+</body>
+
+</html>
